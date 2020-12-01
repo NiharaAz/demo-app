@@ -37,9 +37,9 @@ button{
     width:100px;
     height:30px;
     display:inline-block;
-    margin:0px 0px 10px 500px; 
+    margin:0px 0px 10px 600px; 
     justify-content: space-between;
-    float:left;
+    float:center;
     vertical-align:bottom;
     
 }

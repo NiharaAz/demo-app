@@ -47,67 +47,24 @@ export default {
 
 <style scoped>
 
-.delete{
-    width:100px;
-    height:30px;
-    display:inline-block;
-    margin:0px 0px 10px 500px; 
-    justify-content: space-between;
-    float:left;
-    vertical-align:bottom;
-    
-}
 h1{
     text-align: center;
-    margin-top: 10px;
+    margin-left:-400px;
 
 }
-img {
-display:inline-block;
-  width: 120px;
-  height:120px;
-  margin:0px 0px 10px 500px; 
-  justify-content: space-between;
-  float:left;
-  vertical-align:bottom;
-  
-  
-}
-h4{
-    float: left;
-    vertical-align: bottom;
-    margin-bottom: 20px;
+
+img{
+    height:140px;
+    width:130px;
     justify-content: space-between;
-
-}
-.close{
-    cursor:pointer;
-    display: block;
-        text-align: center;
-        margin:30px 50px 8px 70px;
+    display:inline-block;
+    margin-top:20px;
+    margin-left:600px;
+    margin-right:100px;
+    float:center;
+    vertical-align:bottom;
      display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-    float:left
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-.close :hover {
-        color:black;
-        justify-content: space-between;
-        margin:30px 50px 50px;
-        vertical-align: bottom;
-         display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-        
-    }
-    .remove-item{
-    cursor:pointer;
-    margin-left: 100px;
-    
-   
-}
- .remove-item :hover {
-        color:black;
-        margin-right:100px
-    }
 </style>

@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <router-link to='/list'> Shopping list </router-link>
+    <router-link to='/list' style="font-size:20px;"> Shopping list </router-link>
     <br>
-    <router-link to='/weatherlist'> Weather list </router-link>
+    <router-link to='/weatherlist' style="font-size:20px;" > Weather list </router-link>
+    <br>
+     <router-link to='/demo' style="font-size:20px;" > demo cmp</router-link>
     <router-view>
     </router-view>
     
@@ -23,13 +25,11 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  
+ font-family:"Times New Roman";
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-left: 50px;
+  
 }
 
 </style>
