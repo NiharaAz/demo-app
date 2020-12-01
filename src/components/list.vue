@@ -1,49 +1,44 @@
 <template>
-    <div>
-         
+    <div> 
         <h2> Shopping list  </h2>
+        
         <img src="@/assets/list.jpg" alt="Registration Form" >
+        <!-- <itembar :newitem1='newitem' :itembarlist="list" ></itembar> -->
         <input class="item" type="text" v-model="newitem" placeholder="grocery item" @keyup.enter='addTodo'>
-        <div v-for="(element,index) in list" :key="element" class="todoitem">
-            <input class="checkbox" type="checkbox"> {{element}}
-            <div class="remove-item" @click="removeitem(index)"> &times;
+        <div v-for="(element,index) in list" :key="index" class="todoitem">
+             {{element}}
+            <cancel :msg="index" :listArray1="list"></cancel>
             </div>
-            </div>
-        
-        
-        
-
     </div>
 </template>
 
+
 <script>
-export default {
-    name:'brazil',
+//import itembar from './itembar.vue';
+import cancel from "./cancel.vue";
+
+
+export default
+  {
+    components:{cancel},
+    props:[],
     data: function () {
         return{
             newitem:"",
-            id:1,
-            completed:false,
-            check: 'true',
             list:[
         
             ]
-
-        }
-        
+        }  
     },
     methods: {
         addTodo(){
             this.list.push(this.newitem);
-            //this.id=this.id+1;
             this.newitem=""
     },
     removeitem(index){
         this.list.splice(index,1);
         console.log(index)
-    }
-    
-       
+    } 
 
 }
 }

@@ -2,7 +2,7 @@
   <div id="app">
     <router-link to='/list'> Shopping list </router-link>
     <br>
-    <router-link to='/sm'> Supermarkets </router-link>
+    <router-link to='/weatherlist'> Weather list </router-link>
     <router-view>
     </router-view>
     
