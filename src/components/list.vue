@@ -4,20 +4,17 @@
        
         <img src="@/assets/list.jpg" alt="Registration Form" >
         <input class="item" type="text" v-model="newitem" placeholder="grocery item" @keyup.enter='addTodo'>
-        <div v-for="(element,index) in list" :key="index" class="todoitem" style="font-size: 20px;">
-             {{element}}
-            <cancel :msg="index" :listArray1="list"></cancel>
-            </div>
+        <testinput :listarray2="list"></testinput>
     </div>
 </template>
 
 
 <script>
-import cancel from "./cancel.vue";
+import testinput from './testinput.vue';
 
 export default
   {
-    components:{cancel},
+    components:{testinput},
     props:[],
     data: function () {
         return{

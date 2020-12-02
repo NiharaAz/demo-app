@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import store from './store/index.js';
 
 import {BootstrapVue, IconsPlugin} from 'bootstrap-vue';
 import HomePage from './HomePage.vue'
@@ -21,5 +22,6 @@ const router=new VueRouter({
 
 new Vue({
   render: h => h(HomePage),
-  router
+  store,
+  router,
 }).$mount('#app')
