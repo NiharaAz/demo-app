@@ -4,7 +4,7 @@
     <br>
     <router-link to='/weatherlist' style="font-size:20px;" > Weather list </router-link>
     <br>
-     <router-link to='/demo' style="font-size:20px;" > demo cmp</router-link>
+     <router-link to='/demo' style="font-size:20px;" > With Vuex</router-link>
     <router-view>
     </router-view>
     

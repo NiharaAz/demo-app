@@ -1,25 +1,27 @@
 <template>
 <div>
-     <button class="delete" @click="removeitem(parseInt(msg))">DELETE</button>
+     <button class="delete" @click="removeitem(msg)">DELETE</button>
     </div>
 </template>
-<script>
 
+<script>
+import store from "../store/index.js";
+import { mapGetters } from 'vuex';
 export default {
     name:'deletebutton',
-    props:['msg','imageArray1'],
+    props:['msg'],
     data: function () {
         return{
         }
     },
-    methods:{
-        removeitem(index){
-            this.imageArray1.splice(index,1);
-            console.log(index)
-    }
-       
-    
-    }
+    computed: 
+    mapGetters(['getimageArray']),
+    methods: {
+        removeitem(msg){
+            console.log(msg);
+            store.dispatch("removeimage",{msg});
+        }
+}
 }
 </script>
 

@@ -1,6 +1,6 @@
 import list from './components/list.vue';
 import weatherlist from './components/weatherlist.vue';
-import democmp from './components/democmp.vue';
+import withvuex from './components/withvuex.vue';
 
 export const routes = [
 
@@ -11,4 +11,4 @@ component: list},
 component: weatherlist
 },
 {path:'/demo',
-component:democmp}]
+component:withvuex}]
